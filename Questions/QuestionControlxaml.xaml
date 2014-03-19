@@ -1,0 +1,16 @@
+﻿<UserControl x:Class="Questions.QuestionControlxaml"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" Height="171.045" Width="494.627">
+    <StackPanel Name="ContentControl">
+        <StackPanel Orientation="Horizontal">
+        <Label Content="Question:" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Height="28"/>
+        <Label Content="{Binding Content,Mode=OneWay}" HorizontalAlignment="Left" Margin="88,10,0,0" VerticalAlignment="Top" Height="28" Width="220"/>
+        </StackPanel>
+            <ListBox Name="lstAnswers">
+            </ListBox>
+        <Button Content="Save answer" Width="100" HorizontalAlignment="Right" Click="Button_Click"></Button> 
+    </StackPanel>
+</UserControl>
